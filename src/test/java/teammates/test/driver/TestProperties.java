@@ -100,7 +100,7 @@ public final class TestProperties {
 
             TEAMMATES_VERSION = extractVersionNumber(FileHelper.readFile("src/main/webapp/WEB-INF/appengine-web.xml"));
 
-            IS_GODMODE_ENABLED = Boolean.parseBoolean(prop.getProperty("test.godmode.enabled", "true"));
+            IS_GODMODE_ENABLED = Boolean.parseBoolean(prop.getProperty("test.godmode.enabled", "true")); 
 
             if (isDevServer() && (isCiEnvironment() || IS_GODMODE_ENABLED)) {
                 // For CI and GodMode, we do not read the account details from the test properties file, but generate
